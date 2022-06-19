@@ -210,9 +210,69 @@ h5 {
 
 .pricing {
     background-color: #F5F5F5;
-    padding-top: 100px;
+    padding: 100px 0px 50px;
 }
+
+.pricing__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*pricing__row*/
 
 .pricing__row {
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__column {
+    list-style-type: none;
+    width: 370px;
+    text-align: center;
+}
+
+.pricing__item--name {
+    padding: 15px 0px;
+    background: #333333;
+    border: 2px solid #F5F5F5;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.pricing__item--price {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    padding: 25px 0px;
+    background: #333333;
+    border: 2px solid #F5F5F5;
+}
+
+.pricing__item--text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 15px 0px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #333333;
+    border: 2px solid #F5F5F5;
+}
+
+.pricing__item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    padding: 15px 0px;
+    color: #86878B; 
+    background-color: #fff;
+    border: 2px solid #F5F5F5;
 }
