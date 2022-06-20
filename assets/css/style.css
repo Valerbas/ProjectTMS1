@@ -232,6 +232,9 @@ h5 {
     text-align: center;
 }
 
+/*.pricing__column--active {
+    transition: transform .2s linear;
+}*/
 .pricing__column--active:hover {
     position: relative;
     bottom: 20px;
@@ -280,4 +283,34 @@ h5 {
     color: #86878B; 
     background-color: #fff;
     border: 2px solid #F5F5F5;
+}
+
+/*customers*/
+
+.customers {
+    padding: 100px 0px;
+}
+
+.customers__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.customers__column {
+    width: 370px;
+}
+
+.customers__review {
+    padding: 38px;
+    width: 100%;
+    background-color: #E2E2E2;
+}
+
+.review__text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
 }
