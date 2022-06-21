@@ -89,8 +89,17 @@ body {
     color: #fff;
     border: none;
     margin-top: 27px;
+    cursor: pointer;
+    transition: .3s;
 }
 
+.tabs__btn:hover {
+    background-color: #AB4949;
+}
+.tabs__btn:active {
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949
+}
 
 
 
@@ -232,9 +241,9 @@ h5 {
     text-align: center;
 }
 
-/*.pricing__column--active {
-    transition: transform .2s linear;
-}*/
+.pricing__column--active {
+    transition:.3s;
+}
 .pricing__column--active:hover {
     position: relative;
     bottom: 20px;
