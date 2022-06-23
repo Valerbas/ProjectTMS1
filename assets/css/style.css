@@ -380,3 +380,15 @@ h5 {
     line-height: 21px;
     color: #000000;
 }
+
+
+/*section Design*/
+
+.design {
+    /*height: 450px;*/
+}
+.design__background {
+    background: url(../img/design/image.png) center no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
