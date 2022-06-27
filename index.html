@@ -19,11 +19,11 @@
             </div>
             <div class="header__menu">
                 <nav class="header__nav">
-                    <li class="header__list"><a class="header__link" href="#">Features</a></li>
-                    <li class="header__list"><a class="header__link" href="#">About</a></li>
-                    <li class="header__list"><a class="header__link" href="#">Pricing</a></li>
-                    <li class="header__list"><a class="header__link" href="#">Reviews</a></li>
-                    <li class="header__list"><a class="header__link" href="#">Contact</a></li>
+                    <li class="header__list"><a class="header__link" href="#tabs">Features</a></li>
+                    <li class="header__list"><a class="header__link" href="#awesome">About</a></li>
+                    <li class="header__list"><a class="header__link" href="#pricing">Pricing</a></li>
+                    <li class="header__list"><a class="header__link" href="#customers">Reviews</a></li>
+                    <li class="header__list"><a class="header__link" href="#contact">Contact</a></li>
                 </nav>
             </div>
         </div>
@@ -63,7 +63,7 @@
             </div>
         </div>
     </div>
-    <div class="tabs">
+    <div class="tabs" id="tabs">
         <div class="tabs__wrapper">
             <div class="tabs__row">
                 <div class="tab__item tab__item--acive">
@@ -98,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="awesome">
+    <div class="awesome" id="awesome">
         <div class="awesome__wrapper">
             <div class="wrapper__header">
                 <div class="title">WHY THIS IS AWESOME</div>
@@ -147,7 +147,7 @@
             </div>
         </div>
     </div>
-    <div class="pricing">
+    <div class="pricing" id="pricing">
         <div class="pricing__wrapper">
             <div class="wrapper__header">
                 <div class="title">pricing options</div>
@@ -191,7 +191,7 @@
         </div>
         
     </div>
-    <div class="customers">
+    <div class="customers" id="customers">
         <div class="customers__wrapper">
             <div class="wrapper__header">
                 <div class="title">what our customers are saying</div>
@@ -267,33 +267,33 @@
             <button class="design__btn">Download</button>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact__wrapper">
             <div class="wrapper__header">
                 <div class="title">contact us</div>
                 <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
             <form class="contact__form" action="#" name="contact us form" method="post">
-                <div class="form__userinfo form__userinfo--contact">
-                    <label class="form__label" for="name">
-                    Name
-                    </label>
-                    <input class="form__input" type="text" name="name" required id="name">
-                    <label class="form__label" for="email">
-                    Email
-                    </label>
-                    <input class="form__input" type="email" name="email" required id="email">
-                    <label class="form__label" for="password">
-                    Password
-                    </label>
-                    <input class="form__input" type="password" name="password" required id="password">
+                <div class="contact__form__text">
+                    <div class="form__userinfo form__userinfo--contact">
+                        <label class="form__label" for="name">
+                        Name
+                        </label>
+                        <input class="form__input" type="text" name="name" required id="name">
+                        <label class="form__label" for="email">
+                        Email
+                        </label>
+                        <input class="form__input" type="email" name="email" required id="email">
+                        <label class="form__label" for="password">
+                        Password
+                        </label>
+                        <input class="form__input" type="password" name="password" required id="password">
+                    </div>
+                    <div class="form__message">
+                        <textarea class="form__textarea" placeholder="Message" name="message" id="message"></textarea>
+                    </div>
                 </div>
-                <div class="form__message">
-                    <label class="form__label" for="message">
-                        Message
-                    </label>
-                    <textarea class="form__textarea" name="message" id="message" cols="67" rows="9"></textarea>
-                </div>
+                <button class="contact__form__btn" type="submit">Send Message</button>
             </form>
         </div>
     </div>
