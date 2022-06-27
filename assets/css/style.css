@@ -33,6 +33,7 @@ body {
     background-color: #000000;
     display: flex;
     justify-content: space-between;
+    z-index: 4;
 }
 .header__logo {
     display: inline-flex;
@@ -146,12 +147,81 @@ body {
     width: 470px;
     height: 450px;
     background-color: #fff;
+    /*padding: 35px 50px 0px;*/
+    /*border: 0px solid transparent;*/
+    border: none;
+    border-radius: 10px;
 }
 
 .banner__form__title {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 35px auto 80px;
 }
+
+.banner__form__title--pink {
+    margin: 0 8px;
+    color: #EC7979;
+}
+
+.banner__form__items {
+    margin: 0 50px;
+}
+
+
+.banner__form__label {
+    display: block;
+}
+
+.banner__form__label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+
+.banner__form__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 33px;
+}
+
+.banner__form__input:last-child {
+    margin-bottom: 0;
+}
+.banner__form__btn {
+    width: 470px;
+    padding: 23px;
+    margin: 65px auto 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #EC7979;
+    /*border: 1px solid #EC7979;*/
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.banner__form__btn:hover {
+    background-color: #AB4949;
+}
+.banner__form__btn:active {
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949
+}
+
 
 /*tabs*/
 .tabs__wrapper {
