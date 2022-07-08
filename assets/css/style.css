@@ -10,7 +10,7 @@ body {
 /*into*/
 .intro {
     position: relative;
-    background: url(../img/banner/banner.png) center no-repeat;
+    background: url(../img/banner/banner.png) 0 0/100% 100% no-repeat;
     background-size: cover;
     z-index: 1;
 }
@@ -74,6 +74,7 @@ body {
     z-index: 3;
     display: flex;
     justify-content: space-between;
+    
 }
 .banner__logo {
     margin-bottom: 73px;
@@ -1175,5 +1176,10 @@ img {
     .footer__text {
         font-size: 14px;
         line-height: 16px;
+    }
+}
+@media (max-width:767px) {
+    .banner {
+        display: block;
     }
 }
