@@ -26,6 +26,23 @@
                     <li class="header__list"><a class="header__link" href="#contact">Contact</a></li>
                 </nav>
             </div>
+            <div class="header__menu--mobile">
+                <div class="header__logo--mobile">
+                    <img class="logo__img logo__img--1" src="assets/img/header/ax.png" alt="logo">
+                    <img class="logo__img logo__img--2" src="assets/img/header/it.png" alt="logo">
+                </div>
+                <input class="side-menu" type="checkbox" id="side-menu"/>
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="#tabs">Features</a></li>
+                        <li><a href="#awesome">About</a> </li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#customers">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="banner">
             <div class="banner__wrapper">
@@ -67,8 +84,7 @@
         <div class="social__wrapper">
             <div class="social__text">
                 <div class="social__title">Social Media</div>
-                <div class="social__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aenean euismod bibendum laoreet.</div>
+                <div class="social__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="social__subtitle__span">Aenean euismod bibendum laoreet.</span></div>
             </div>
             <ul class="social__list">
                 <li class="social__item"><a href="#" class="social__link"><svg class="social__svg social__svg--facebook" width="32" height="56" viewBox="0 0 32 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,8 +151,8 @@
     <div class="awesome" id="awesome">
         <div class="awesome__wrapper">
             <div class="wrapper__header">
-                <div class="title">WHY THIS IS AWESOME</div>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="title title--awesome">WHY THIS IS AWESOME</div>
+                <div class="text text--awesome">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
             <div class="awesome__row">
                 <div class="awesome__column">
@@ -232,7 +248,7 @@
                     <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
             <div class="customers__row">
-                <div class="customers__column">
+                <div class="customers__column customers__column--noneactive">
                     <div class="customers__review">
                         <p class="review__text">Lorem 
                             ipsum      
@@ -270,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="customers__column">
+                <div class="customers__column customers__column--noneactive">
                     <div class="customers__review">
                         <p class="review__text">Lorem 
                             ipsum      
@@ -290,13 +306,18 @@
                     </div>
                 </div>
             </div> 
+            <div class="slider__dots">
+                <div class="slider__item"></div>
+                <div class="slider__item slider__item--checked"></div>
+                <div class="slider__item"></div>
+            </div>
         </div>
     </div>
     <div class="design">
         <div class="design__wrapper">
             <div class="design__header">
                 <div class="design__title">STYLISH AXURE DESIGN</div>
-                <div class="design__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</div>
+                <div class="design__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes <span class="design__subtitle__span">faster than ever!</span> </div>
             </div>
             <button class="design__btn">Download</button>
         </div>
@@ -313,15 +334,15 @@
                         <label class="form__label" for="name">
                         Name
                         </label>
-                        <input class="form__input" type="text" name="name" required id="name">
+                        <input class="form__input form__input--contact" type="text" name="name" required id="name">
                         <label class="form__label" for="email">
                         Email
                         </label>
-                        <input class="form__input" type="email" name="email" required id="email">
+                        <input class="form__input form__input--contact" type="email" name="email" required id="email">
                         <label class="form__label" for="password">
                         Password
                         </label>
-                        <input class="form__input" type="password" name="password" required id="password">
+                        <input class="form__input form__input--contact" type="password" name="password" required id="password">
                     </div>
                     <div class="form__message">
                         <textarea class="form__textarea" placeholder="Message" name="message" id="message"></textarea>

@@ -10,7 +10,7 @@ body {
 /*into*/
 .intro {
     position: relative;
-    background: url(../img/banner/banner.png) 0 0/100% 100% no-repeat;
+    background: url(../img/banner/banner.png) center no-repeat;
     background-size: cover;
     z-index: 1;
 }
@@ -63,7 +63,9 @@ body {
     line-height: 19px;
     color: #FFFFFF;
 }
-
+.header__menu--mobile {
+    display: none;
+}
 /*banner*/
 .banner {
     padding: 306px 170px 185px;
@@ -644,7 +646,7 @@ img {
     background-size: cover;
     padding: 100px 0px 50px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .design:after {
     content: '';
@@ -1179,7 +1181,466 @@ img {
     }
 }
 @media (max-width:767px) {
+    body {
+        width: 320px;
+    }
+    .intro {
+        width: 100%;
+    }
+    .header {
+        width: 320px;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__logo--mobile {
+        display: inline-flex;
+        justify-content: flex-start;
+        padding: 16px 0px;
+        margin-left: 20px;
+    }
+    .logo__img--1 {
+        width: 39px;
+        height: 23px;
+    }
+    .logo__img--2 {
+        width: 24px;
+        height: 23px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__menu--mobile {
+        display: block;
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #000000;
+        overflow: hidden;
+     
+    }
+    .menu a {
+        display: block;
+        padding: 30px 0px;
+        margin: 0 auto;
+        color: #FFFFFF;
+        outline: none;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .menu a:hover{
+        background-color: #EC7979;
+    }
+    .nav{
+        max-height: 0;
+        transition: max-height .5s ease-out;
+    }
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 25px 35px;
+    }
+     
+    .hamb-line {
+        background: #FFFFFF;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+     
+    }
+     
+    .hamb-line::before,
+    .hamb-line::after{
+        background: #FFFFFF;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .hamb-line::before{
+        top: -7px;
+    }
+    .hamb-line::after{
+        top: 7px;
+    }
+     
+    .side-menu {
+        display: none;
+    }
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
     .banner {
+        padding: 140px 16px 50px 16px;
+    }
+    .banner__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner__logo {
+        display: none;
+    }
+    .banner__title {
+        width: 288px;
+        
+    }
+    .banner__title__text {
+        text-align: center;
+    }
+    .banner__title::after {
+        width: 134px;
+        margin: 44px auto 42px;
+    }
+    .banner__subtitle {
+        width: 288px;
+        margin-bottom: 42px;
+    }
+    .banner__subtitle__text {
+        text-align: center;
+    }
+    .banner__btn {
+        width: 288px;
+        margin-bottom: 56px;
+    }
+    .banner__form {
+        width: 288px;
+        height: 381px
+    }
+    .banner__form__title {
+        font-size: 14px;
+        line-height: 19px;
+        margin: 40px auto 45px;
+    }
+    .banner__form__title--pink {
+        margin: 0 4px;
+    }
+    .form__userinfo {
+        margin: 0 20px;
+    }
+    .form__input {
+        width: 240px;
+        margin-bottom: 33px;
+    }
+    .banner__form__btn {
+        width: 288px;
+        height: 60px;
+        margin: 51px auto 0;
+    }
+    .social__wrapper {
+        width: 288px;
+        padding: 46px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social__text {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .social__title {
+        text-align: center;
+    }
+    .social__subtitle {
+        text-align: center;
+    }
+    .social__subtitle__span {
         display: block;
     }
+    .social__list {
+        width: 100%;
+    }
+    .social__svg--facebook {
+        width: 11px;
+        height: 21px;
+    }
+    .social__svg--twitter {
+        width: 21px;
+        height: 17px;
+    }
+    .social__svg--linkedin {
+        width: 20px;
+        height: 20px;
+    }
+    .social__svg--pinterest {
+        width: 23px;
+        height: 22px;
+    }
+    .social__svg--insta {
+        width: 20px;
+        height: 20px;
+    }
+    .social__svg--git {
+        width: 22px;
+        height: 21px;
+    }
+    .social__svg--rss {
+        width: 17px;
+        height: 17px;
+    }
+    .tabs__wrapper {
+        width: 288px;
+        margin: 41px auto 53px;
+    }
+    .tab__item {
+        width: 96px;
+        height: 40px;
+    }
+    .tabs__text {
+        width: 243px;
+        margin: 0 auto;
+    }
+    .tabs__title {
+        width: 243px;
+        padding: 35px 0px 30px;
+        text-align: center;
+    }
+    .tabs__title--text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .tabs__subtitle {
+        width: 243px;
+    }
+    .tabs__subtitle__text {
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+    }
+    .tabs__btn {
+        width: 243px;
+        margin: 30px auto;
+    }
+    .tabs__img {
+        display: none;
+    }
+    .awesome__wrapper {
+        width: 288px;
+        margin: 50px auto 60px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .title--awesome {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .title:after {
+        width: 134px;
+        height: 1px;
+        margin: 53px auto 27px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .text--awesome {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .awesome__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .awesome__column {
+        width: 288px;
+    }
+    .awesome__column:nth-child(2) {
+        margin: 0;
+    }
+    .item-awesome__icon {
+        margin: 0 auto;
+    }
+    .item-awesome__title {
+        width: 288px;
+        text-align: center;
+    }
+    .pricing {
+        background-color: #F5F5F5;
+        padding: 50px 0px 0px;
+    }
+    .pricing__wrapper {
+        width: 288px;
+    }
+    .pricing__row {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pricing__column {
+        margin-bottom: 27px;
+        width: 288px;
+    }
+    .customers {
+        padding: 36px 0px 32px;
+    }
+    .customers__wrapper {
+        width: 288px;
+        margin: 0 auto;
+    }
+    .wrapper__header {
+        margin: 0px auto 24px;
+    }
+    .customers__column {
+        width: 288px;
+    }
+    .customers__column--noneactive {
+        display: none;
+    }
+    .customers__review {
+        padding: 50px 18px 50px 18px;
+    }
+    .customers__profile {
+        margin-top: 62px;
+    }
+    .customers__icon {
+        width: 57px;
+        height: 57px;
+    }
+    .customers__name {
+        padding: 15px 0px 11px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .customers__position {
+        margin-top: 9px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .slider__dots {
+        display: flex;
+        justify-content: space-between;
+        width: 130px;
+        margin: 31px auto 0;
+    }
+    .slider__item {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #86878B;
+        border-radius: 50%;
+    }
+    .slider__item--checked {
+        background-color: #86878B;
+    }
+    .design {
+        padding: 50px 0px 57px;
+    }
+    .design__wrapper {
+        width: 288px;
+    }
+    .design__header {
+        margin-bottom: 70px;
+    }
+    .design__title:after {
+        width: 134px;
+        margin: 50px auto 20px;
+    }
+    .design__subtitle {
+        text-align: center;
+    }  
+    .design__subtitle__span {
+        display: block;
+    }
+    .design__btn {
+        width: 288px;
+        height: 50px;
+    }
+    .contact {
+        padding: 50px 0px 40px;
+    }
+    .contact__wrapper {
+        width: 288px;
+    }
+    .contact__form {
+        margin-top: 64px;
+    }
+    .contact__form__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .form__userinfo--contact {
+        margin: 0 0 50px;
+        width: 288px;
+    }
+    .form__input--contact {
+        display: block;
+        width: 288px;
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        margin-bottom: 50px;
+    }
+    .form__message {
+        width: 288px;
+    }
+    .form__textarea {
+        width: 100%;
+        height: 196px;
+    }
+    .contact__form__btn {
+        width: 288px;
+    }
+    .footer {
+        padding: 37px 0px 45px;
+    }
+    .footer__wrapper {
+        width: 275px;
+    }
+    .footer__list {
+        margin-bottom: 47px;
+    }
+    .footer__svg--facebook {
+        width: 11px;
+        height: 21px;
+    }
+    .footer__svg--twitter {
+        width: 21px;
+        height: 17px;
+    }
+    .footer__svg--linkedin {
+        width: 20px;
+        height: 20px;
+    }
+    .footer__svg--pinterest {
+        width: 23px;
+        height: 22px;
+    }
+    .footer__svg--insta {
+        width: 20px;
+        height: 20px;
+    }
+    .footer__svg--git {
+        width: 21px;
+        height: 22px;
+    }
+    .footer__svg--rss {
+        width: 17px;
+        height: 17px;
+    }
+
 }
